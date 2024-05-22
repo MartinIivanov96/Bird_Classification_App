@@ -1,6 +1,6 @@
 package unidue.de;
 
-public abstract class Bird implements FlyingEntity, SwimmingEntity{
+public abstract class Bird {
     private String name;
     private int age;
     private float weight;

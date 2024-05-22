@@ -1,9 +1,9 @@
 package unidue.de;
 
-public class Eagle extends Bird {
+public class Eagle extends Bird implements FlyingEntity {
     private float maxAirSpeed;
 
-    Eagle(String name, int age, float weight) {
+    Eagle(String name, int age, float weight, float maxAirSpeed) {
         super(name, age, weight);
         this.setMaxAirSpeed(maxAirSpeed);
     }

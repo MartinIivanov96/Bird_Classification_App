@@ -1,6 +1,6 @@
 package unidue.de;
 
-public class Penguin extends Bird {
+public class Penguin extends Bird  implements SwimmingEntity{
 
     private float maxWaterSpeed;
 

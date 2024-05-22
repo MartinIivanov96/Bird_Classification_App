@@ -1,6 +1,6 @@
 package unidue.de;
 
-public class Seagull extends Bird {
+public class Seagull extends Bird implements FlyingEntity{
     private float maxAirSpeed;
 
     Seagull(String name, int age, float weight, float maxAirSpeed) {

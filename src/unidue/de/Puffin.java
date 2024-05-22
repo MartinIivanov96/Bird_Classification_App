@@ -1,7 +1,7 @@
 package unidue.de;
 
 
-public class Puffin extends Bird {
+public class Puffin extends Bird implements FlyingEntity, SwimmingEntity {
     private float maxAirSpeed, maxWaterSpeed;
 
     Puffin(String name, int age, float weight, float maxAirSpeed, float maxWaterSpeed) {

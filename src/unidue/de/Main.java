@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Seagull seagull = new Seagull("Martin", 12 , 2.5f, 50.5f);
-        Eagle eagle = new Eagle ("Dennis" , 8,6.5f,150.75f);
+        Eagle eagle = new Eagle ("Dennis" , 8,6.5f, 165f);
 
         seagull.eatFood();
         eagle.eatFood();
@@ -20,6 +20,16 @@ public class Main {
         penguin.jumpIntoWater();
         penguin.swim();
         penguin.leaveWater();
+
+        Puffin puffin = new Puffin("Cole", 13 , 13f, 21f, 24f);
+        puffin.eatFood();
+        puffin.liftOff();
+        puffin.fly();
+        puffin.land();
+        puffin.jumpIntoWater();
+        puffin.swim();
+        puffin.leaveWater();
+
 
     }
 }
