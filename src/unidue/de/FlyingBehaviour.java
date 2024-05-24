@@ -1,6 +1,6 @@
 package unidue.de;
 
-public interface FlyingEntity {
+public interface FlyingBehaviour {
 
 
 

@@ -1,7 +1,6 @@
 package unidue.de;
 
-public interface SwimmingEntity {
-
+public interface SwimmingBehaviour {
 
     void jumpIntoWater() ;
     void swim() ;

@@ -1,36 +1,11 @@
 package unidue.de;
 
-public class Seagull extends Bird implements FlyingEntity{
-    private float maxAirSpeed;
+public class Seagull extends Bird {
 
-    Seagull(String name, int age, float weight, float maxAirSpeed) {
-        super(name, age, weight);
-        this.setMaxAirSpeed(maxAirSpeed);
-    }
-
-    @Override
-    public void setMaxAirSpeed(float maxAirSpeed) {
-        this.maxAirSpeed = maxAirSpeed;
-    }
-
-    @Override
-    public float getMaxAirSpeed() {
-        return maxAirSpeed;
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Ich fliege über das Meer mit " + this.getMaxAirSpeed() + "km/h");
-    }
-
-    @Override
-    public void liftOff() {
-        System.out.println("Vom Strand abgeflogen");
-    }
-
-    @Override
-    public void land() {
-        System.out.println("Am Strand gelandet");
+    Seagull(String name, int age, float weight) {
+        super(name, age, weight, new BasicFlyBehaviour(), new NoSwimmingBehaviour());
+        getFlyingBehaviour().setMaxAirSpeed(60f);
+        getSwimmingBehaviour().setMaxWaterSpeed(0.5f);
     }
 
     @Override
